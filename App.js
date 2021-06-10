@@ -22,7 +22,7 @@ export default class App extends React.Component {
           <Button style={{ borderRadius: 10 }} title="Tanks" onPress={() => {
             this.choose("tank");
           }} />
-          <Button style={{ borderRadius: 10, alignItems: "center" }} title="DPS" onPress={() => {
+          <Button style={{ borderRadius: 10,  }} title="DPS" onPress={() => {
             this.choose("dps");
           }} />
           <Button style={{ borderRadius: 10 }} title="Support" onPress={() => {
@@ -33,7 +33,7 @@ export default class App extends React.Component {
           }} />
         </View>
         <View style={{ flex: 8, backgroundColor: "white", justifyContent: "center", alignItems: "center" }}>
-          <Image source={this.state.hero.logo} style={{ maxWidth: "100%", maxHeight: "100%", height: "100%", width: "100%", justifyContent: "center" }} />
+          <Image source={this.state.hero.logo} style={{  height: "100%", width: "100%", resizeMode: "contain", justifyContent: "center" }} />
         </View>
         <View style={{ flex: 1, backgroundColor: "white", justifyContent: "center" }}>
           <Button style={{ borderRadius: 10 }} title="Roll!" onPress={() => {
