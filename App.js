@@ -69,7 +69,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: "5px",
+    padding: 5,
   },
   btn: {
     marginLeft: 5,
