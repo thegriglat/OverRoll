@@ -40,4 +40,10 @@ export function getRndHero(role) {
     return _l[i];
 }
 
+export function getRndHeros(role) {
+    if (role === undefined) role = "all";
+    const _l = Heroes.filter(e => e.role === role || role === "all");
+    return _l.length;
+}
+
 export default Heroes;
